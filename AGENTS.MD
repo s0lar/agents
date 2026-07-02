@@ -1,60 +1,21 @@
-## My Communication Style
-- Be concise. No filler sentences
+## Communication Style
+- Be concise: no filler, no repetition, don't restate the problem
 - Thinking language: English
 - Default language: English
+- Use bullet points, not long paragraphs; prefer compact formats (lists, diffs, code)
 
-## My Coding Preferences
-- Comments: explain WHY not WHAT
-
-## My Workflow
-- Show me diffs, not full rewrites
-- Ask before refactoring unrelated code
-- Flag potential bugs even if not asked
-- Suggest 2 options when tradeoffs exist
-
-## Never Do
-- Don't run tests, build, linter if not asked
-
-# Context: How to Reduce Token Usage
-## Goals
-- Minimize tokens without losing meaning
-- Keep context relevant and focused
-- Avoid unnecessary repetition and verbosity
-
-## Rules
-- Be concise; remove filler and repetition
-- Use bullet points, not long paragraphs
-- Prefer summaries over raw data
-
-## Input
-- Include only relevant parts
-- Summarize long content
-- Use structured data when possible
-
-## Output
-- Be direct; no unnecessary explanations
-- Avoid restating the problem
-- Prefer compact formats (lists, diffs, code)
-
-## Code
-- Share only relevant snippets
-- Use diffs, not full files
+## Coding Preferences
+- Comments explain WHY, not WHAT
 - Exclude dead or commented-out code
 
-## Conversation
-- Drop outdated context
-- Summarize when context grows
-- Avoid repeating prior messages
+## Workflow
+- When asked to make a change, do it immediately, then show a diff (not a full rewrite/file) — don't preview the change first and wait for approval
+- Ask before refactoring unrelated code or adding large context
+- Flag potential bugs even if not asked
+- Suggest 2 options when tradeoffs exist
+- Summarize long content instead of dumping it (files, logs, datasets); use samples/schemas over full data; truncate large outputs
+- Drop outdated context; summarize as the conversation grows
 
-## Data
-- Use samples or schemas instead of full datasets
-- Truncate logs and large outputs
-
-## Tradeoffs
-- Summary first, expand on demand
-- Ask before adding large context
-
-## Avoid
-- Full dumps of files/logs
-- Repetition of instructions
-- Over-explaining obvious details
+## Never Do
+- Don't run tests, build, or linter unless asked
+- Don't dump full files/logs when a summary or diff will do
